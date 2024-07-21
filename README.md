@@ -1,6 +1,6 @@
 # Shopping Ecommerce Project
 
-Live Project Link : [https://shopkaaart.netlify.app/](https://shopkaaart.netlify.app/)
+Live Project Link : [https://shopkart.akshaydhayal.xyz/](https://shopkart.akshaydhayal.xyz/)
 
 Welcome to our Shopping Ecommerce Project! This application is designed to provide users with a seamless shopping experience, allowing them to browse a wide range of products, add items to their cart, and proceed with checkout. Key features of this project include:
 
