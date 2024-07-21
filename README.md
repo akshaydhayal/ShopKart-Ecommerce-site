@@ -16,6 +16,10 @@ Welcome to our Shopping Ecommerce Project! This application is designed to provi
 3. **Checkout:**
    - Once users have added desired items to their shopping cart, they can proceed to the checkout process.
    - The checkout process involves reviewing the selected items, providing any promo code if available and then confirming the purchase.
+  
+4. **Progressive Web App (PWA) and Responsive Design:**
+   - The application is built as a Progressive Web App, providing an app-like experience with offline capabilities.
+   - The site is fully responsive, ensuring a smooth and intuitive experience on all devices, including desktops, tablets, and mobile phones.
 
 ## Video Demo:
 
