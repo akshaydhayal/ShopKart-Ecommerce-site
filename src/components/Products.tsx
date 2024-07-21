@@ -127,9 +127,9 @@ function Products({setCartQuantity,}: {setCartQuantity: React.Dispatch<React.Set
   if (currentPageProducts.length == 0) {
     return (
       <div className="w-[80vw] h-[90vh] flex justify-center items-center">
-        <div className="flex items-center justify-center w-[35vw] h-[10vh] text-gray-900 dark:text-black">
+        <div className="flex items-center justify-center w-full sm:w-4/5 md:w-2/3 h-[10vh] text-gray-900 dark:text-black">
           <div>
-            <h1 className="text-lg md:text-3xl font-bold flex items-center font-mono">
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold flex items-center font-mono">
               L
               <svg
                 stroke="currentColor"
@@ -153,7 +153,8 @@ function Products({setCartQuantity,}: {setCartQuantity: React.Dispatch<React.Set
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="w-full grid grid-cols-3 gap-6">
+      {/* <div className="w-full grid grid-cols-3 gap-6"> */}
+      <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
         {currentPageProducts &&
           currentPageProducts.map((p: any) => {
             return (

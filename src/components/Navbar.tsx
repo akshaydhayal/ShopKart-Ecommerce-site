@@ -22,15 +22,15 @@ function Navbar({cartQuantity}:{cartQuantity:number}) {
 
     console.log("cartQuantity",cartQuantity);
     return (
-        <div className="flex justify-between px-10 p-2 h-[10vh] bg-slate-50">
+        <div className="flex justify-between px-2 sm:px-10 p-2 h-[10vh] bg-slate-50">
             <Link to="/">
                 <div className="flex gap-3 items-center cursor-pointer">
                     <BsShop className="w-10 h-10 text-red-700 "/>
-                    <p className="font-semibold text-3xl font-serif tracking-tight">Shop<span className="text-red-700">Kart</span></p>    
+                    <p className="hidden sm:block font-semibold text-3xl font-serif tracking-tight">Shop<span className="text-red-700">Kart</span></p>    
                 </div>
             </Link>
-            <div className="flex gap-3 w-2/5">
-                <div className="w-full flex">
+            <div className="flex gap-3 w-1/2 sm:w-2/5">
+                <div className="w-full h-[5vh] sm:h-[5vh] md:h-[6vh] lg:h-[7vh] flex">
                     <div className="flex w-10/12 relative">
                     <input type="text" value={searchProduct} className="p-2 px-6 rounded-l-lg border border-slate-600 
                     w-full placeholder:text-slate-600 " placeholder="Search ShopKart" onChange={(e)=>{
@@ -43,14 +43,9 @@ function Navbar({cartQuantity}:{cartQuantity:number}) {
                             setSearchProduct('');
                         }}/>
                         }
-                        {/* <RxCross2 className="w-5 h-5 cursor-pointer hover:w-6 hover:h-6" onClick={()=>{
-                            setSearchedProduct(null);
-                            setSearchProduct('');
-                        }}/> */}
-
                     </div>
                     </div>
-                    <button type="submit" className="w-2/12 border border-slate-600 p-2 flex justify-center
+                    <button type="submit" className="w-2/12 border border-slate-600 p-1 sm:p-2 flex justify-center
                      items-center rounded-r-lg hover:bg-slate-100" onClick={()=>{
                          setSearchedProduct(searchProduct);
                      }}>
@@ -59,7 +54,7 @@ function Navbar({cartQuantity}:{cartQuantity:number}) {
                 </div>
             </div>
             <div className="flex gap-3">
-                <MdOutlineNotificationsNone className="w-8 h-8"/>
+                <MdOutlineNotificationsNone className="hidden sm:block w-8 h-8"/>
                 <div className="relative flex" onClick={()=>{
                     setCartCheckoutStatus(true);
                 }}>

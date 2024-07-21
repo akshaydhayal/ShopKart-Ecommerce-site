@@ -29,10 +29,10 @@ function Filters() {
     return (
     <div className=" h-[90vh] ">
         <p className="font-bold text-xl font-serif px-4 pt-4">Filters</p>
-      <div className="flex flex-col justify-center px-6 p-4 gap-6">
+      <div className="flex flex-col justify-center px-1 sm:px-6 p-4 gap-6">
         <div className="flex flex-col gap-2">
-            <div className="flex justify-between items-center">
-              <p className="font-semibold text-lg font-serif">Categories</p>
+            <div className="flex flex-row justify-between items-center">
+              <p className="font-semibold text-base sm:text-lg font-serif">Categories</p>
               <p className=" text-blue-700 hover:text-blue-600 hover:underline 
               hover:font-semibold text-sm font-medium cursor-pointer font-sans " onClick={()=>{
                 setFilterCategory(null);
@@ -54,24 +54,23 @@ function Filters() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <div className="flex justify-between items-center">
-            <p className="font-semibold text-lg font-serif">Price range</p>
+        <div className="flex flex-col gap-2 ">
+          {/* <div className="flex justify-between items-center"> */}
+          <div className="flex flex-row justify-between items-center">
+            <p className="font-semibold text-base sm:text-lg font-serif">Price <span className="hidden sm:inline">range</span></p>
             <p className=" text-blue-700 hover:text-blue-600 hover:underline 
             hover:font-semibold text-sm font-medium cursor-pointer font-sans " onClick={()=>{
               setFilterByPrice(null);
             }}>CLEAR</p>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center gap-2">
             <input type="text" placeholder="$5" className="placeholder:text-slate-500
-             border px-3 p-1 w-1/3 border-slate-600 rounded-sm" onChange={(e)=>{
-            // <input type="text" placeholder="$5" className="placeholder:text-slate-500
-            //  border px-3 p-1 w-1/3 border-slate-950 hover:border-2  rounded-sm" onChange={(e)=>{ 
+             border px-3 p-1 w-4/5 sm:w-1/3 border-slate-600 rounded-sm" onChange={(e)=>{
               setFilterLowestPrice(Number(e.target.value))
              }}/>
             <p className="text-slate-600">to</p>
             <input type="text" placeholder="$10" className="placeholder:text-slate-500
-             border px-3 p-1 w-1/3 border-slate-500 rounded-sm" onChange={(e)=>{
+             border px-3 p-1 w-4/5 sm:w-1/3 border-slate-500 rounded-sm" onChange={(e)=>{
               setFilterHighestPrice(Number(e.target.value));
              }}/>
           </div>
@@ -83,7 +82,7 @@ function Filters() {
         </div>
 
         <div>
-          <p className="font-semibold text-lg font-serif">Customer Ratings</p>
+          <p className="font-semibold text-base sm:text-lg font-serif"><span className="hidden sm:inline">Customer</span> Ratings</p>
           <div className="flex flex-col gap-2">
             <div className="flex gap-4 items-center">
               <input type="checkbox" className="h-4 w-4" value='4+' onChange={(e)=>{

@@ -66,7 +66,7 @@ function Checkout() {
     }
     return (
         <div className="w-screen h-screen flex justify-center py-2">
-            <div className="w-2/5 p-4 h-max flex flex-col gap-4 rounded-lg shadow-xl border border-slate-300 divide-y divide-slate-400">
+            <div className="w-full sm:w-2/3 md:w-1/2 lg:w-2/5 p-8 h-max flex flex-col gap-4 rounded-lg shadow-xl border border-slate-300 divide-y divide-slate-400">
                 <div className="flex justify-between items-center">
                     <p className="font-serif font-semibold text-xl">Your Cart</p>
                     <RxCross2 className="w-6 h-6 hover:w-7 hover:h-7 cursor-pointer" onClick={()=>{

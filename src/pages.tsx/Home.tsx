@@ -12,10 +12,14 @@ function Home({setCartQuantity,}: {setCartQuantity: React.Dispatch<React.SetStat
       {checkoutStatus && <Checkout />}
       {!checkoutStatus && (
         <div className="flex w-screen">
-          <div className="w-1/5 border">
+          {/* <div className="w-1/3 md:w-2/5 lg:w-1/5 border"> */}
+          <div className="hidden sm:block sm:w-1/3 lg:w-1/5 border">
+          {/* <div className="w-1/3 lg:w-1/5 border"> */}
             <Filters />
           </div>
-          <div className="w-4/5 ">
+         
+          <div className="w-full md:w-3/5 lg:w-4/5">
+          {/* <div className="w-2/3 md:w-3/5 lg:w-4/5"> */}
             <Products setCartQuantity={setCartQuantity} />
           </div>
         </div>
