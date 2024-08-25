@@ -6,6 +6,21 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <meta 
+    http-equiv="Content-Security-Policy" 
+    content="default-src 'self'; 
+             script-src 'self'; 
+             style-src 'self'; 
+             img-src 'self' https://cdn.dummyjson.com data:; 
+             connect-src 'self' https://dummyjson.com/* https://dummyjson.com/products/category-list; 
+             font-src 'self';">
+
+     
+     <!-- connect-src 'self' https://dummyjson.com https://dummyjson.com/products/category-list;  -->
+     <!-- frame-ancestors 'none'; 
+     object-src 'none'; -->
+
+
     <!-- Indicates that the application is a Canvas -->
     <meta name="dscvr:canvas:version" content="vNext">
     <!-- Open Graph Image for previewing the Canvas -->
