@@ -16,7 +16,7 @@ function Products({setCartQuantity,}: {setCartQuantity: React.Dispatch<React.Set
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch(`https://cors-anywhere.herokuapp.com/https://dummyjson.com/products?limit=15&skip=${(currPage - 1) * 15}`, { method: "GET" });
+      const response = await fetch(`https://dummyjson.com/products?limit=15&skip=${(currPage - 1) * 15}`, { method: "GET" });
       const data = await response.json();
       if (data.products) {
         setCurrentPageProducts(data.products);
