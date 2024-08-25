@@ -18,7 +18,7 @@ function Products({setCartQuantity,}: {setCartQuantity: React.Dispatch<React.Set
     async function fetchProducts() {
       const response = await fetch(
         `https://dummyjson.com/products?limit=15&skip=${(currPage - 1) * 15}`,
-        { method: "GET" }
+        { method: "GET",mode:"no-cors" }
       );
       const data = await response.json();
       if (data.products) {
