@@ -2,5 +2,5 @@
   for = "/*"
   [headers.values]
     # Content-Security-Policy = "default-src 'self';"
-    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://my-canvas.com/* https://cdn.dummyjson.com data:; connect-src 'self' https://dummyjson.com; font-src 'self';"
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://my-canvas.com/* https://cdn.dummyjson.com data:; connect-src 'self' https://dummyjson.com https://dummyjson.com/products?limit=15&skip=0; font-src 'self';"
     # Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' https://my-canvas.com/* https://cdn.dummyjson.com data:; connect-src 'self' https://dummyjson.com https://dummyjson.com/* https://dummyjson.com/products/category-list; font-src 'self';"
