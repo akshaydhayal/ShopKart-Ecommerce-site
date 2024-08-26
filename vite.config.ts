@@ -13,11 +13,14 @@ import { VitePWA } from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
+    // headers: {
+    //   "Content-Security-Policy": `default-src 'self'; script-src 'self'; 
+    //         style-src 'self'; img-src 'self' https://cdn.dummyjson.com data:;
+    //         connect-src 'self' https://dummyjson.com/* https://dummyjson.com/products/category-list;
+    //         font-src 'self';`,
+    // },
     headers: {
-      "Content-Security-Policy": `default-src 'self'; script-src 'self'; 
-            style-src 'self'; img-src 'self' https://cdn.dummyjson.com data:;
-            connect-src 'self' https://dummyjson.com/* https://dummyjson.com/products/category-list;
-            font-src 'self';`,
+      "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src https://cdn.dummyjson.com/; connect-src 'self' https://dummyjson.com/ ;",
     },
   },
   plugins: [
