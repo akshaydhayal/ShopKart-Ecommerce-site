@@ -20,7 +20,7 @@ export default defineConfig({
     //         font-src 'self';`,
     // },
     headers: {
-      "Content-Security-Policy": "default-src 'self'; script-src 'self'; style-src 'self'; img-src https://cdn.dummyjson.com/; connect-src 'self' https://dummyjson.com/ ;",
+      "Content-Security-Policy": "default-src 'self'; img-src https://cdn.dummyjson.com/; connect-src 'self' https://dummyjson.com/ ;",
     },
   },
   plugins: [
